@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="동균이와예린이결혼합니다."/>
+	<meta property="og:description" content="결혼에 함께해주세요."/>
+	<meta property="og:image" content="img/thumbnail.png"/>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/media.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>sojagicard</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="./js/index.js"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d0e29c54960b51a37a1ccaf01acc124d"></script>
+</head>
+<script>
+	var page_name = 'home'
+	var mcard_ver = '4';
+	var mcard_root = '';
+	var skin_ver = '3';
+	var wrapper_width = 0
+	var wrapper_left_margin = 0
+	var skin_margin_dir = '2';
+	var m_name = '박동균';
+	var g_name = '남예린';
+	var wday = '2024-06-15 11:00:00';
+	var skin_info = '151';
+	var venue_name = '소풍컨벤션웨딩';
+	var venue_floor = '7층 라온제나홀';
+	var wposition = '소풍컨벤션웨딩';
+	var map_lat = '37.50360463664355';
+	var map_lng = '126.75669879243438';
+	var map_addr = '경기 부천시 원미구 상동 539-1';
+	var map_road = '경기 부천시 원미구 송내대로 239';
+	var map_tel = '032-624-7777';
+	var map_file_name = '';
+	var map_use_online = '1';
+	var own_hash = '1706432969';
+</script>
+<body> 
+	<div id="wrapper">
+	<!-- 메인이미지 -->
+	<div id="scene_wrapper">
+		<div id="scene_slider">
+		  <img class="scene_photo" src="img/main1.png" width="10%" />
+		  <img class="scene_photo" src="img/main2.png" width="20%" />
+		  <img class="scene_photo" src="img/main3.png" width="20%" />
+		  <img class="scene_photo" src="img/main4.png" width="20%" />
+		</div>
+		<img id="skin_info" src="img/skin_info.png"width="100%"  />
+	</div>
+	<script src="https://img.bojagicard.com/jquery/sudoSlider/jquery.sudoSlider.min.js"></script>
+	<!-- 설명글귀 -->
+	<div class="section" id="insa_section">
+		<div class="section_header">
+			<h2 class="section_title">결혼합니다</h2>
+		</div>
+		<article>
+			<p class="insa_text">
+				싱그러운 여름 향기 가득한 날, 소중한 분들을 모시고<br> 사랑의 약속을 하려고 합니다. <br>
+				햇살이 뜨거울 땐 가려주고, 비가오면<br> 우산이 되어주는 부부가 되겠습니다. <br>
+				기쁜날 함께 하시어 저희의 앞날을 축복해 주세요.
+			</p>
+		</article>
+		<table id="insa_family_tbl">
+			<tr class="insa_name_row">
+			  <td class="insa_parent_block">
+				<div class="parent_name">박용희</div>
+				<div class="parent_name">김혜정</div>
+			  </td>
+			  <td class="insa_rel_block">
+				의            </td>
+			  <td class="insa_ord_block" align="center">
+				<span>장남</span>
+			  </td>
+			  <td class="insa_self_block">
+				<span>박</span><span>동균</span>
+			  </td>
+			</tr>
+			<tr class="insa_name_row">
+			  <td class="insa_parent_block">
+				<div class="parent_name">남하용</div>
+				<div class="parent_name">최난영</div>
+			  </td>
+			  <td class="insa_rel_block">
+				의            </td>
+			  <td class="insa_ord_block" align="center">
+				<span>장녀</span>
+			  </td>
+			  <td class="insa_self_block">
+				<span>남</span><span>예린</span>
+			  </td>
+			</tr>
+		  </table>
+	
+	</div>
+	<!-- 날짜 -->
+	<div class="section">
+	<div class=" calendar_section" id="calendar_row" data-section="calendar">
+		<div class="section_header">
+			<div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
+			<div class="section_header_day day_title_date"> date. </div>
+			<div class="section_header_day day_title_num"> 06/15</div>
+		</div>
+		<div class="section_body_radius">
+			<div class="calendar_wrapper" >
+				<h2 class="section_title">날짜</h2>
+				<div id="calendar">
+					<div class="calendar_inner">
+						<div class="calendar_ym">2024.06 </div>
+						<table class='calendar'>
+							<!-- <caption>June 2024</caption> -->
+							<tr><th class='header'>일</th><th class='header'>월</th><th class='header'>화</th><th class='header'>수</th><th class='header'>목</th><th class='header'>금</th><th class='header'>토</th></tr>
+							<tr><td colspan='6'>&nbsp;</td>
+								<td class='day' rel='2024-06-01'><span>1</span></td>
+							</tr>
+							<tr>
+								<td class='day' rel='2024-06-02'><span>2</span></td>
+								<td class='day' rel='2024-06-03'><span>3</span></td>
+								<td class='day' rel='2024-06-04'><span>4</span></td>
+								<td class='day' rel='2024-06-05'><span>5</span></td>
+								<td class='day' rel='2024-06-06'><span>6</span></td>
+								<td class='day' rel='2024-06-07'><span>7</span></td>
+								<td class='day' rel='2024-06-08'><span>8</span></td>
+							</tr>
+							<tr>
+								<td class='day' rel='2024-06-09'><span>9</span></td>
+								<td class='day' rel='2024-06-10'><span>10</span></td>
+								<td class='day' rel='2024-06-11'><span>11</span></td>
+								<td class='day' rel='2024-06-12'><span>12</span></td>
+								<td class='day' rel='2024-06-13'><span>13</span></td>
+								<td class='day' rel='2024-06-14'><span>14</span></td>
+								<td class='day dday' rel='2024-06-15'><span>15</span></td>
+							</tr>
+							<tr>
+								<td class='day' rel='2024-06-16'><span>16</span></td>
+								<td class='day' rel='2024-06-17'><span>17</span></td>
+								<td class='day' rel='2024-06-18'><span>18</span></td>
+								<td class='day' rel='2024-06-19'><span>19</span></td>
+								<td class='day' rel='2024-06-20'><span>20</span></td>
+								<td class='day' rel='2024-06-21'><span>21</span></td>
+								<td class='day' rel='2024-06-22'><span>22</span></td>
+								
+							</tr>
+							<tr>
+								<td class='day' rel='2024-06-23'><span>23</span></td>
+								<td class='day' rel='2024-06-24'><span>24</span></td>
+								<td class='day' rel='2024-06-25'><span>25</span></td>
+								<td class='day' rel='2024-06-26'><span>26</span></td>
+								<td class='day' rel='2024-06-27'><span>27</span></td>
+								<td class='day' rel='2024-06-28'><span>28</span></td>
+								<td class='day' rel='2024-06-29'><span>29</span></td>
+								
+							</tr>
+							<tr>
+								<td class='day' rel='2024-06-30'><span>30</span></td>
+								<td colspan='6'>&nbsp;</td>
+							</tr>
+						</table>            
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- 갤러리 -->
+	<div class="section">
+		<div class="section_header">
+			<h2 class="section_title">갤러리</h2>
+		</div>
+		<div id="photo_list_wrapper">
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec01.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec02.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec03.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec04.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec05.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec06.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec07.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec08.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec09.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec10.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec11.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec12.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec13.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec14.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec15.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec16.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec17.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec18.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec19.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec20.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec21.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec22.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec23.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec24.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec25.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec26.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec27.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+		
+	
+		</div>
+		<div id="moreBtn"onclick="moreView()">더보기</div>
+	</div>
+	<!-- 모달 -->
+	<div id="modal" class="hidden"><!--hidden fixed z-10 inset-0 overflow-y-auto-->
+
+				
+		
+				<div class="modal-body">
+					
+					<div class="swiper mySwiper">
+						<p class="pop_btn pop_close_btn ">
+							<button id="modal-close" type=" button" >
+						 </button>
+						</p>
+						<!-- <p class="pop_btn pop_left_btn arrow_btn">
+							<button type="button" onclick="pre_view()" ></button>
+						</p>
+						<p class="pop_btn pop_right_btn arrow_btn">
+							<button type="button" onclick="next_view()" >
+							</button>
+						</p> -->
+						<div class="swiper-wrapper"></div>
+						<div class="pop_btn swiper-button-next arrow_btn"><span></span></div>
+							<div class="pop_btn swiper-button-prev  arrow_btn"><span></span></div>
+					</div>
+				</div>
+				
+
+	</div>
+	<!-- 오시는길 -->
+	<div class="section" id="map_section" data-section="map">
+		<h2 class="section_title">오시는 길</h2>
+			<ul class="map_title section_title">
+				<li class="section_title_img">
+
+				</li>
+				<li>
+					<div id="map" style="height:400px;"></div>
+				</li>
+			</ul>
+			<div class="map_navi_icon">
+				<div class="map_navi_button">
+					<a target="_blank"
+							href="https://tmap.life/e276651b">
+							<img class="map_navi_button_img" src="img/map_tmap.png" />
+							<br />티맵
+					</a>
+					
+				</div>
+				<!-- <div class="map_navi_button">
+						<a target="_blank" onclick="return not_for_pc()" href="http://m.atlan.co.kr/searchPlus/linkAtlan.do?shareType=kakao&coordX=126.75669879243438&coordY=37.50360463664355&title=%EC%86%8C%ED%92%8D%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9&AuthKey=2b1ffc4c97acca5a359282739535a280576c02aa0cc4c89b86afca8e20bdc7e8">
+							<img class="map_navi_button_img" src="img/map_atlan.png" />
+							<br />아틀란
+						</a>
+				</div> -->
+				<div class="map_navi_button">
+						<a href="https://naver.me/FDjfsrVz">
+								<img src="img/map_naver.png" />      
+								<br /> 네이버  
+						</a>
+				</div>
+				<div class="map_navi_button">
+						<a href="https://place.map.kakao.com/m/413941493"><img src="img/map_kakao.png" /><br/>카카오</a>
+				</div>
+			</div>	
+			
+			<div class="map_address">
+				<div>웨스턴팰리스</div>
+				<div>인천 부평구 부평대로278번길 16</div>
+				<div class="mat_tel_btn">032-524-5000</div>
+				<a href="tel:032-524-5000">
+				  <span class="tel_ask_btn">전화문의 </span>
+				</a>
+			</div>
+			<div id="map_text">
+				<div class="map_text_row">
+					<div style="font-size:15px;">🚋 지하철</div>
+					<div style="font-size:12px;">1. 1호선(인천방면) 부평역 하차 후 인천지하철로 환승<span>(귤현, 계양방면)</span></div>
+					<div style="font-size:12px;">2. 인천지하철 갈산역②번 출구로 나오세요.
+					<span>※인천시외버스터미널에서 인천지하철 이용 (부평, 귤현, 계양방면)</span>
+					</div>
+				</div>
+				<div class="map_text_row">
+					<div style="font-size:15px;">🚌 버스</div>
+					<div style="font-size:12px;">
+						(대중교통 이용시 대우자동차 정문앞/ 갈산역 하차)<br/>
+						일반버스 : 90 간선버스 12, 30, 34, 67-1<br/>
+						지선버스 : 555, 584-1, 526<br/>
+						시외버스 : 1400, 3000, 5000, 9500, 3030 <br/>
+					</div>
+				</div>
+				<div class="map_text_row">
+						<div style="font-size:15px;">🚗 주차안내</div>
+						<div style="font-size:12px;">
+						하객주차장1<br/>
+						<span>부평 우림라이온스밸리 주차장(최대 3시간)</span>
+						<span>인천시 부평구 부평대로 283</span>
+						<span>지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.</span>
+						하객주차장2<br/>
+						<span>갈산역 공영주차장(최대 2시간)</span>
+						<span>인천 부평구 부평대로278번길 8</span>
+						</div>
+						<!-- <div style="font-size:12px;">갈산역 공영주차장
+							<span>지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.<br>
+							웨스턴팰리스 웨딩하우스 (구, 부평관광호텔)<br>
+							(032)524-5000 인천광역시 부평구 부평대로278번길 16<br>
+							(구 주소: 인천광역시 부평구 갈산동 178-1)</span>
+						</div> -->
+						
+					</div>
+			</div>
+	</div>
+
+
+	<!-- 축하마음전하기 -->
+	<div class="section"> 
+		<div class="section_header">
+			<h2 class="section_title">축하의 마음 전하기</h2>
+		</div>
+		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"data-type="a" data-side="a">
+			<ul class="family_members family_member_a family_member_a1" data-side="a" onclick="bank_view('groom')">
+				<li class="name_block name_a1">박동균<span style="margin-left: 10px;">신한 110-359-913109</span></li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="박동균"
+					data-bank_name="신한은행"
+					data-bank_num="110-359-913109">
+					<span>복사</span>
+				</li>
+			</ul>
+			<ul class="family_members family_member_a family_member_a2" data-side="a" onclick="bank_view('bride')"style="border-left: 1px solid #a7adbb;border-right: 1px solid #a7adbb;">
+				<li class="name_block name_a2">남예린<span style="margin-left: 10px;">신한 110-522-193955</span></li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="남예린"
+					data-bank_name="신한은행"
+					data-bank_num="110-522-193955">
+					<span>복사</span>
+				</li>
+			</ul>
+			<ul class="family_members family_member_a family_member_a3" data-side="a" onclick="bank_view('brideParent')" >
+				<li class="name_block name_a2">최난영(신부측 혼주)<span style="margin-left: 10px;">기업 170-089126-02-033</span></li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="최난영"
+					data-bank_name="기업은행"
+					data-bank_num="170-089126-02-033">
+					<span>복사</span>
+				</li>
+			</ul>
+		</div>
+    </div>
+	<!-- 계좌 팝업 -->
+	<div id="mask" class="hidden" style="position: fixed; z-index: 10; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; width: 100%; height: 100%;">
+		<div id="bank_popup" class="mask_over">
+			<div class="bank_content">
+			</div>
+			<div id="bank_pop_btns" class="mcard_button2_row">
+				<div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn" onclick="copy_to_clipboard()">
+					복사
+				</div>
+				<div class="mcard_button2" id="bank_pop_close_btn">
+					닫기
+				</div>
+			</div>
+		</div>   
+	</div>
+	 </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var isOpen = false;
+
+// 모달
+// 모달 열기 함수
+function openModal() {
+	document.getElementById('modal').classList.remove('hidden');
+	document.body.classList.add('overflow-hidden');
+}
+function openBank() {
+	document.getElementById('mask').classList.remove('hidden');
+	document.body.classList.add('overflow-hidden');
+}
+
+// 모달 닫기 함수
+function closeModal() {
+	document.getElementById('modal').classList.add('hidden');
+	document.body.classList.remove('overflow-hidden');
+}
+function closeBank() {
+	document.getElementById('mask').classList.add('hidden');
+	document.body.classList.remove('overflow-hidden');
+}
+
+// 모달 닫기 버튼에 이벤트 리스너 추가
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('bank_pop_close_btn').addEventListener('click', closeBank);
+
+// 이미지를 클릭했을 때 모달 열기
+function photo_view(element) {
+	
+	// 모달 내용 설정 예시: 이미지
+	var modalBody = document.querySelector('.modal-body .swiper-wrapper');
+	let imagePath=element.src;
+	let indexMatch = imagePath.match(/rec(\d+)\.png/)[1];
+	modalBody.innerHTML = '';
+	for (let i = 1; i <= 27; i++) {
+    let paddedIndex = i.toString().padStart(2, '0'); // 숫자를 2자리로 패딩하여 문자열로 변환
+    modalBody.innerHTML += `<div class="swiper-slide"><img src="img/yrec${paddedIndex}.png" alt="사진"></div>`;
+}
+	var swiper = new Swiper(".mySwiper", {
+		initialSlide: indexMatch - 1, // indexMatch에 해당하는 슬라이드를 초기 슬라이드로 설정
+		navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+	});
+	openModal();
+}
+function bank_view(element) {
+	openBank();
+	// 모달 내용 설정 예시: 이미지
+	let roll;
+	let modalBody	 = document.querySelector('.bank_content');
+	let bankName;
+	let bankNum;
+	let personName;
+	if(element == "groom"){ 
+		roll = '신랑';
+		bankName= document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.name;
+	} else if (element == "brideParent"){ 
+		roll = '신부(혼주)';
+		bankName= document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.name;
+	}else{
+		roll = '신부';
+		bankName= document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.name;
+  }
+
+	modalBody.innerHTML = 	`<div id="bank_pop_title">${roll}측 계좌번호</div>
+		<div id="bank_pop_notice">
+			복사 버튼 클릭 시, 복사됩니다.
+		</div>
+		<div id="bank_pop_txts">
+			<ul class="bank_family_group_block" >
+				<li id="bank_pop_txt_unm">${personName}</li>
+				<li>${bankName}<span id="bank_pop_txt_acc">${bankNum}</span></li>
+			</ul>
+		</div>`;	
+}
+//이미지슬라이드 화살표
+
+const totalImages = 27; // 총 이미지 수
+
+// 이전 이미지 버튼 클릭 시
+function pre_view() {
+    let modalBody = document.querySelector('.modal-body img');
+    let currentImageSrc = modalBody.getAttribute('src');
+    console.log(modalBody);
+    console.log(currentImageSrc);
+    // 이미지 파일명에서 인덱스 추출
+    let index = currentImageSrc.match(/yrec(\d+)\.png/)[1];
+    currentImageIndex = parseInt(index);
+    currentImageIndex = (currentImageIndex === 1) ? totalImages : currentImageIndex - 1;
+    // 두 자리 숫자로 포맷팅
+    let formattedIndex = currentImageIndex.toString().padStart(2, '0');
+    console.log(formattedIndex);
+    updateImage(formattedIndex);
+}
+// 다음 이미지 버튼 클릭 시
+function next_view() {
+    let modalBody = document.querySelector('.modal-body img');
+    let currentImageSrc = modalBody.getAttribute('src');
+    console.log(modalBody);
+    console.log(currentImageSrc);
+    // 이미지 파일명에서 인덱스 추출
+	let index = currentImageSrc.match(/yrec(\d+)\.png/)[1];
+	currentImageIndex = parseInt(index);
+    currentImageIndex = (currentImageIndex === totalImages) ? 1 : currentImageIndex + 1;
+    // 두 자리 숫자로 포맷팅
+    let formattedIndex = currentImageIndex.toString().padStart(2, '0');
+    console.log(formattedIndex);
+    updateImage(formattedIndex);
+};
+
+// 이미지 업데이트 함수
+function updateImage(e) {
+	let modalBody = document.querySelector('.modal-body');
+	let img = modalBody.querySelector('img'); // 이미지 요소 찾기
+	if (img) {
+        img.src = 'img/yrec' + e + '.png'; // 이미지의 src 속성 변경
+        img.alt = '사진'; // alt 속성 설정
+    } else {
+        // 이미지 요소가 없는 경우 새로 생성하여 추가
+        img = document.createElement('img');
+        img.src = 'img/yrec' + e + '.png';
+        img.alt = '사진';
+        modalBody.appendChild(img);
+    }
+}
+
+ //복사
+ function copy_to_clipboard() { 
+		var copyText = document.getElementById('bank_pop_txt_acc').innerText;
+		var tempInput = document.createElement("input");
+		document.body.appendChild(tempInput);
+		tempInput.setAttribute("value", copyText);
+		tempInput.select();
+		document.execCommand("copy");
+		document.body.removeChild(tempInput);
+		alert('복사되었습니다, 감사합니다.');
+		closeBank();
+    }
+//더보기
+function moreView(){
+    var photoHeight = document.getElementById('photo_list_wrapper');
+    var btn = document.querySelector('#moreBtn');
+    isOpen = !isOpen; // 토글 상태 변경
+
+    if (isOpen) {
+        photoHeight.style.height = 'unset';
+        btn.textContent = '접기';
+    } else {
+        photoHeight.style.height = '432px';
+        btn.textContent = '더보기';
+    }
+}
+
+</script>
+</html>
