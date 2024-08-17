@@ -23,7 +23,7 @@
 	<!-- 메인이미지 -->
 	<div id="scene_wrapper">
 		<div id="scene_slider">
-		  <img class="scene_photo" src="img/main1.png" />
+		  <img class="scene_photo active" src="img/main1.png" />
 		  <img class="scene_photo" src="img/main2.png" />
 		  <img class="scene_photo" src="img/main3.png" />
 		</div>
@@ -228,24 +228,7 @@
 			<div class="photo_wrapper" >
 				<img class="photo_image" src="img/rec21.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
 			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec22.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec23.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec24.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec25.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec26.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec27.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.png" onclick="photo_view(this)" />
-			</div>
+
 		
 	
 		</div>
@@ -431,20 +414,28 @@
 <script>
 var isOpen = false;
 document.addEventListener("DOMContentLoaded", function() {
-  const slider = document.getElementById('scene_slider');
   const images = document.querySelectorAll('.scene_photo');
   let currentIndex = 0;
 
   function showNextImage() {
+    // 현재 활성화된 이미지에서 active 클래스를 제거
+    images[currentIndex].classList.remove('active');
+    
+    // 다음 인덱스 계산
     currentIndex++;
     if (currentIndex >= images.length) {
       currentIndex = 0;
     }
-    const offset = -currentIndex * 100; // 100%씩 이동
-    slider.style.transform = `translateX(${offset}%)`;
+
+    // 다음 이미지를 활성화
+    images[currentIndex].classList.add('active');
   }
 
-  setInterval(showNextImage, 7000); // 3초마다 이미지 전환
+  // 첫 번째 이미지를 활성화
+  images[currentIndex].classList.add('active');
+
+  // 일정 시간마다 다음 이미지로 전환
+  setInterval(showNextImage, 7000); // 7초마다 이미지 전환
 });
 // 모달
 // 모달 열기 함수
@@ -535,7 +526,7 @@ function bank_view(element) {
 }
 //이미지슬라이드 화살표
 
-const totalImages = 27; // 총 이미지 수
+const totalImages = 21; // 총 이미지 수
 
 // 이전 이미지 버튼 클릭 시
 function pre_view() {
