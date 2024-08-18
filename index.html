@@ -470,7 +470,7 @@ function photo_view(element) {
 	let imagePath=element.src;
 	let indexMatch = imagePath.match(/rec(\d+)\.png/)[1];
 	modalBody.innerHTML = '';
-	for (let i = 1; i <= 27; i++) {
+	for (let i = 1; i <= 21; i++) {
     let paddedIndex = i.toString().padStart(2, '0'); // 숫자를 2자리로 패딩하여 문자열로 변환
     modalBody.innerHTML += `<div class="swiper-slide"><img src="img/yrec${paddedIndex}.png" alt="사진"></div>`;
 }
