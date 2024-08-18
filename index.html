@@ -532,30 +532,30 @@ const totalImages = 21; // 총 이미지 수
 function pre_view() {
     let modalBody = document.querySelector('.modal-body img');
     let currentImageSrc = modalBody.getAttribute('src');
-    console.log(modalBody);
-    console.log(currentImageSrc);
+    // console.log(modalBody);
+    // console.log(currentImageSrc);
     // 이미지 파일명에서 인덱스 추출
     let index = currentImageSrc.match(/yrec(\d+)\.png/)[1];
     currentImageIndex = parseInt(index);
     currentImageIndex = (currentImageIndex === 1) ? totalImages : currentImageIndex - 1;
     // 두 자리 숫자로 포맷팅
     let formattedIndex = currentImageIndex.toString().padStart(2, '0');
-    console.log(formattedIndex);
+    // console.log(formattedIndex);
     updateImage(formattedIndex);
 }
 // 다음 이미지 버튼 클릭 시
 function next_view() {
     let modalBody = document.querySelector('.modal-body img');
     let currentImageSrc = modalBody.getAttribute('src');
-    console.log(modalBody);
-    console.log(currentImageSrc);
+    // console.log(modalBody);
+    // console.log(currentImageSrc);
     // 이미지 파일명에서 인덱스 추출
 	let index = currentImageSrc.match(/yrec(\d+)\.png/)[1];
 	currentImageIndex = parseInt(index);
     currentImageIndex = (currentImageIndex === totalImages) ? 1 : currentImageIndex + 1;
     // 두 자리 숫자로 포맷팅
     let formattedIndex = currentImageIndex.toString().padStart(2, '0');
-    console.log(formattedIndex);
+    // console.log(formattedIndex);
     updateImage(formattedIndex);
 };
 
